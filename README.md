@@ -18,6 +18,6 @@ En dan worden de values in de tabel gestopt.
 Bij collaborative filtering maak je recommendations op basis van eigenschappen van klanten.
 In deze recommendation wordt er gekeken naar wat voor gedrag de klant die aan het winkelen is vertoont en geeft beveelt producten aan die klanten met het zelfde winkelgedrag ook hebben bekeken.
 
-Er worden eerst 50 willekeurige klanten uit de tabel 'profile' geselecteerd waar de producten die ze bekeken hebben(column 'viewed_before') in een lijst worden gestopt. 
+Er worden eerst 50 willekeurige klanten met het zelfde winkelgedrag uit de tabel 'profile' geselecteerd waar de producten die ze bekeken hebben(column 'viewed_before') in een lijst worden gestopt. 
 Uit deze producten worden er 5 willekeurig gekozen die als recommendation worden gegeven.
 Dan wordt er een tabel gemaakt met de colommen: collab_filter_id(primary key), profile_id(profiel waar de recommendations op gebaseerd zijn) en collab_product_id(het product dat aanbevolen wordt).
