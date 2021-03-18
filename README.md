@@ -16,7 +16,7 @@ En dan worden de values in de tabel gestopt.
 # Collaborative filtering(Vergelijkbare gebruikers bekeken ook)
 
 Bij collaborative filtering maak je recommendations op basis van eigenschappen van klanten.
-In deze recommendation wordt er gekeken naar wat voor klant aan het winkelen is en geeft beveelt producten aan die klanten met het zelfde winkelgedrag ook hebben bekeken.
+In deze recommendation wordt er gekeken naar wat voor gedrag de klant die aan het winkelen is vertoond en geeft beveelt producten aan die klanten met het zelfde winkelgedrag ook hebben bekeken.
 
 Er worden eerst 50 willekeurige klanten uit de tabel 'profile' geselecteerd waar de producten die ze bekeken hebben(column 'viewed_before') in een lijst worden gestopt. 
 Uit deze producten worden er 5 willekeurig gekozen die als recommendation worden gegeven.
