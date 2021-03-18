@@ -11,7 +11,7 @@ Dus als er een lichaamsverzorgings product voor mannen geselecteerd is geeft het
 
 Bij deze recommendation haalt eerst 5 willekeurige producten met het tegenovergestelde gender uit de tabel 'product' en stopt deze in een lijst. 
 Hierna wordt er een tabel gegenereerd waarin het recommendation_id(primary key), het product_id (van het product waar de recommendations op gebaseerd zijn) en het recommended_product_id(het product_id van het product dat aanbevolen wordt).
-En dan worden de values in de tabel gestopt.
+En dan worden de values in de tabel gestopt. Waaruit de recommended_product_id kan worden gehaald om in de front-end te vertonen.
 
 # Collaborative filtering(Vergelijkbare gebruikers bekeken ook)
 
@@ -20,4 +20,4 @@ In deze recommendation wordt er gekeken naar wat voor gedrag de klant die aan he
 
 Er worden eerst 50 willekeurige klanten met het zelfde winkelgedrag uit de tabel 'profile' geselecteerd waar de producten die ze bekeken hebben(column 'viewed_before') in een lijst worden gestopt. 
 Uit deze producten worden er 5 willekeurig gekozen die als recommendation worden gegeven.
-Dan wordt er een tabel gemaakt met de colommen: collab_filter_id(primary key), profile_id(profiel waar de recommendations op gebaseerd zijn) en collab_product_id(het product dat aanbevolen wordt).
+Dan wordt er een tabel gemaakt met de colommen: collab_filter_id(primary key), profile_id(profiel waar de recommendations op gebaseerd zijn) en collab_product_id(het product dat aanbevolen wordt). Waaruit de collab_product_id kan worden gehaald om in de front-end te vertonen.
